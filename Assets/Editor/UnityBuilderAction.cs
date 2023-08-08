@@ -11,10 +11,10 @@ namespace UnityBuilderAction
     public static class BuildScript
     {
         private static readonly string Eol = Environment.NewLine;
-        private static string APP_NAME = "Test Saja";
-        private static string COMPANY_NAME = "EasyApk";
+        private static string APP_NAME = "Test Slot";
+        private static string COMPANY_NAME = "1691503886997407982405";
         private static string BUILD_VERSION_NAME = "1.0.0";
-        private static string PACKAGENAME = "com.janjijiwa.enakrasanya";
+        private static string PACKAGENAME = "com.testslot.sdfsdfsdsdfsdfsf";
         private static string PATH_KEYSTORE = "data.keystore";
         private static string KEYSTORE_PASS = "123456";
         private static string KEY_ALIAS_NAME = "test";
@@ -37,7 +37,6 @@ namespace UnityBuilderAction
             PlayerSettings.companyName = COMPANY_NAME;
             PlayerSettings.bundleVersion = BUILD_VERSION_NAME;
             PlayerSettings.SetApplicationIdentifier(BuildTargetGroup.Android, PACKAGENAME);
-
 
             // Apply build target
             var buildTarget = (BuildTarget)Enum.Parse(typeof(BuildTarget), options["buildTarget"]);
